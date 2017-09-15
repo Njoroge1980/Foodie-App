@@ -2,7 +2,13 @@
 
 Description
 This is your own food diary. You can keep track of just what you are eating and how many calories each food carries
-By:Njoroge Mungai
+
+Author
+Njoroge Mungai
+
+Setup/Installation Requirements
+
+This app can be cloned at https://github.com/Njoroge1980/Foodie-App.git. To open it, extract the file and then view it in your browser.
 
 Known Bugs
 
