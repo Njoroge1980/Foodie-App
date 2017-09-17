@@ -9,13 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var addFood_model_1 = require('./addFood.model');
 var AppComponent = (function () {
     function AppComponent() {
+        this.foodList = [
+            new addFood_model_1.Food("Ugali", "Brown sorghum Ugali", 250),
+            new addFood_model_1.Food("Managu", "Steamed green veggies", 129),
+            new addFood_model_1.Food("Beef", "Fried half kilo", 400),
+            new addFood_model_1.Food("Chips", "Deep fried potatoes", 330),
+            new addFood_model_1.Food("Kebab", "Deep fried snack", 312),
+            new addFood_model_1.Food("Spaghetti", "Boiled carbs", 250),
+        ];
+        this.selectedFood = this.foodList[0];
     }
+    AppComponent.prototype.showDetails = function (clickedFood) {
+        this.selectedFood = clickedFood;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-foodie',
-            template: "\n  <h1>MY FOOD DIARY</h1>\n\n  "
+            template: "\n  <h1>MY FOOD DIARY</h1>\n<addfood\n[newFood] = \"foodList\"\n></addfood>\n<p>\nFood Name: {{selectedFood.name}}</p>\n<p>Food Details\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

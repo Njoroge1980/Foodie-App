@@ -1,17 +1,20 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input } from '@angular/core';
 import { Food } from './addFood.model';
 
 @Component({
   selector: 'addFood',
   template: `
-    <div *ngFor="let currentTask of childTaskList">
+    <div *ngFor="let currentFood  of newFood">
 
-      <h3>{{ currentTask.description }}</h3>
-      <button (click)="editButtonHasBeenClicked(currentTask)">Edit</button>
+      <h3>{{ currentFood.name }}</h3>
+      <button (click)="showDetails(clickedFood)" {{selectedFood.}}><h3>
+
+
     </div>
   `
 })
 
 export class AddComponent {
+  @Input() newFood: Food[];
 
 };
