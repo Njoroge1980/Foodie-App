@@ -5,12 +5,9 @@ import { Food }from './addFood.model';
   selector: 'my-foodie',
   template: `
   <h1>MY FOOD DIARY</h1>
-<addfood
-[newFood] = "foodList"
-></addfood>
-<p>
-Food Name: {{selectedFood.name}}</p>
-<p>Food Details
+    <addfood
+    [newFood] = "foodList"
+    ></addfood>
   `
 })
 

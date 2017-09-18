@@ -19,7 +19,7 @@ var AddComponent = (function () {
     AddComponent = __decorate([
         core_1.Component({
             selector: 'addFood',
-            template: "\n    <div *ngFor=\"let currentFood  of newFood\">\n\n      <h3>{{ currentFood.name }}</h3>\n      <button (click)=\"showDetails(clickedFood)\" {{selectedFood.}}><h3>\n\n\n    </div>\n  "
+            template: "\n\n      <h3>{{ currentFood.name }}</h3>\n      <button (click)=\"showDetails(clickedFood)\" {{selectedFood.}}><h3>\n    \n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AddComponent);

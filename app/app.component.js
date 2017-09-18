@@ -28,7 +28,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-foodie',
-            template: "\n  <h1>MY FOOD DIARY</h1>\n<addfood\n[newFood] = \"foodList\"\n></addfood>\n<p>\nFood Name: {{selectedFood.name}}</p>\n<p>Food Details\n  "
+            template: "\n  <h1>MY FOOD DIARY</h1>\n    <addfood\n    [newFood] = \"foodList\"\n    ></addfood>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

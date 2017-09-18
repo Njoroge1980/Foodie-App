@@ -1,0 +1,21 @@
+{
+  "name": "foodie-app",
+  "description": "Description This is your own food diary. You can keep track of just what you are eating and how many calories each food carries",
+  "main": "index.html",
+  "authors": [
+    "Njoroge"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Njoroge1980/Foodie-App",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
